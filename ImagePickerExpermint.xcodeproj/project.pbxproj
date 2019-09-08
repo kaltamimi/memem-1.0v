@@ -10,7 +10,6 @@
 		F11AF04C231A61200072B475 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11AF04B231A61200072B475 /* AppDelegate.swift */; };
 		F11AF04E231A61200072B475 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11AF04D231A61200072B475 /* ViewController.swift */; };
 		F11AF051231A61200072B475 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F11AF04F231A61200072B475 /* Main.storyboard */; };
-		F11AF054231A61200072B475 /* ImagePickerExpermint.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F11AF052231A61200072B475 /* ImagePickerExpermint.xcdatamodeld */; };
 		F11AF056231A61210072B475 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F11AF055231A61210072B475 /* Assets.xcassets */; };
 		F11AF059231A61210072B475 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F11AF057231A61210072B475 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -20,7 +19,6 @@
 		F11AF04B231A61200072B475 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F11AF04D231A61200072B475 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F11AF050231A61200072B475 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F11AF053231A61200072B475 /* ImagePickerExpermint.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ImagePickerExpermint.xcdatamodel; sourceTree = "<group>"; };
 		F11AF055231A61210072B475 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F11AF058231A61210072B475 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F11AF05A231A61210072B475 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,7 +60,6 @@
 				F11AF055231A61210072B475 /* Assets.xcassets */,
 				F11AF057231A61210072B475 /* LaunchScreen.storyboard */,
 				F11AF05A231A61210072B475 /* Info.plist */,
-				F11AF052231A61200072B475 /* ImagePickerExpermint.xcdatamodeld */,
 			);
 			path = ImagePickerExpermint;
 			sourceTree = "<group>";
@@ -139,7 +136,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F11AF04E231A61200072B475 /* ViewController.swift in Sources */,
-				F11AF054231A61200072B475 /* ImagePickerExpermint.xcdatamodeld in Sources */,
 				F11AF04C231A61200072B475 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,19 +334,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		F11AF052231A61200072B475 /* ImagePickerExpermint.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				F11AF053231A61200072B475 /* ImagePickerExpermint.xcdatamodel */,
-			);
-			currentVersion = F11AF053231A61200072B475 /* ImagePickerExpermint.xcdatamodel */;
-			path = ImagePickerExpermint.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = F11AF040231A61200072B475 /* Project object */;
 }
