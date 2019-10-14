@@ -15,6 +15,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet weak var imagePickerView: UIImageView!
     @IBOutlet weak var cameraBtn: UIBarButtonItem!
     
+    var memedImage: UIImage!
+    
     let pickerController = UIImagePickerController()
     // cameraButton.isEnabled = UIImagePickerController.isSourceTypeAvailable(.camera)
     
@@ -141,7 +143,31 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     
+    
+    
+    // MARK: Generating Meme Objects
+    
+    //generate such an image is to grab an image context and let it render the view hierarchy(image & textfields in this case) into a UIImage object.
+    func generateMemedImage() -> UIImage {
+
+        // TODO: Hide toolbar and navbar
+
+        // Render view to an image
+        UIGraphicsBeginImageContext(self.view.frame.size)
+        view.drawHierarchy(in: self.view.frame, afterScreenUpdates: true)
+        let memedImage:UIImage = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+
+        // TODO: Show toolbar and navbar
+
+        return memedImage
+    }
+    
     //to save image
+    func save() {
+        // Create the meme
+        let meme = Meme(topText: topText.text!, bottomText: bottomText.text!, originalImage: imagePickerView.image!, memedImage: memedImage)
+    }
     
 }
 
